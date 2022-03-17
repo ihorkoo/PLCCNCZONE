@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <title>PLCcnczone</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="wrapper">
+                <div class="block_item">
+                     <img class="logo" id="logo-header" src="{% static 'ico/PLC cnczone.png' %}" alt="logo">
+                     <div class="item nav_right" id="contact_sm">
+                        <div class="phone"><a class="" href="tel:+447555444015">+44 7555 444015</a></div>
+                        <div class='email'><a class="" href="mailto:Kamal@plccnczone.com" target="_blank">Kamal@plccnczone.com</a></div>
+                    </div>
+                </div>
+                <div class="block_item middle">
+                    <div class="item search-container">
+                        <form class="search" action="{% url 'product'%}">
+                          <input class="in_search" type="text" placeholder="Search our parts database" name="q" value='{{ request.GET.q }}'>
+                          <button type="submit" class="btn_search"></button>
+                        </form>
+                    </div>
+                    <nav class="item nav">
+                        <div class="menu__icon" id="burger"><span></span></div>
+                        <ul class="menu main_menu">
+                            <li class="menu_item"><a href="{% url 'main' %}" class="menu_link">Welcome</a></li>
+                            <li class="menu_item"><a href="{% url 'about'%}" class="menu_link">About us</a></li>
+                            <li class="menu_item"><a href="{% url 'contact'%}" class="menu_link ">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="block_item">
+                    <div class="item nav_right" id="contact_bg">
+                        <div class="phone"><a class="" href="tel:+447555444015">+44 7555 444015</a></div>
+                        <div class='email'><a class="" href="mailto:Kamal@plccnczone.com" target="_blank">Kamal@plccnczone.com</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+{%block content%}
+{%endblock%}
+<footer>
+        <div class="container">
+            <div class="block_item">
+                <img src="{% static 'ico/PLC cnczone.png'%}" alt="logo" class="logo">
+            </div>
+            <div class="block_item">
+               PLCcnczone LTD © 2022, All Rights Reserved
+            </div>
+<!--            <div class="block_item">-->
+<!--                Unit 18, Rumer Hill Business Estate, Rumer Hill Road, Cannock, WS11 0ET, United Kingdom-->
+<!--            </div>-->
+<!--            <div class="block_item">-->
+<!--                Registered in England and Wales | Company No. 7454463 | VAT No. GB 109055434-->
+<!--            </div>-->
+            <div class="block_item">
+                <a href="tel:+44 7555 444015">Tel: +44 7555 444015</a> |<a href="mailto:Kamal@plccnczone.com">Email: Kamal@plccnczone.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/slider.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/burger.js' %}"></script>
+    {{ scr }}
+</body>
+</html>

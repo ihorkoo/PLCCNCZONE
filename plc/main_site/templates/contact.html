@@ -1,0 +1,42 @@
+{% extends "base.html"%}
+{%block content%}
+    <section class="section1">
+        <div class="container">
+            <div class="wrapper">
+                <div class="block_item">
+                    Your Global Gateway for INDUSTRIAL Automation Parts™
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section3">
+        <div class="container">
+            <div class="wrapper" id="mt-minus">
+
+                <div class="block_item" >
+                {% if successful %}
+                    <h3>The application is accepted</h3>
+                {% elif error %}
+                    <h3>An error occurred, please try again later</h3>
+                {% else %}
+                    <h3>Call us today to see how we can help you</h3>
+                        <form  method="POST" id="feedback" class="block_grid">
+                            {% csrf_token %}
+                            <input type="text" class="grid_item _req" placeholder="Name" name="name" form="feedback">
+                            <input type="text" class="grid_item _req" placeholder="Phone" name="phone" form="feedback">
+                            <input type="text" class="grid_item _req _email" placeholder="Email" name="email" form="feedback">
+                            <input type="submit" class="grid_item" id="btn-submit" value='SUBMIT' form="feedback">
+                        </form>
+                {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{%endblock%}
+
+
+

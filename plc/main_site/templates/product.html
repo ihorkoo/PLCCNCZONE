@@ -1,0 +1,69 @@
+{% extends "base.html"%}
+{% load static %}
+{%block content%}
+    <section class="section1">
+        <div class="container">
+
+                <table align="centre">
+                    <tr>
+                        <th>#</th>
+                        <th>SKU</th>
+                        <th>NAME</th>
+                        <th>MANUFACTURER</th>
+                        <th>IN STOCK</th>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>1234</td>
+                        <td>1345</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>1234</td>
+                        <td>1345</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>1234</td>
+                        <td>1345</td>
+                    </tr>
+                </table>
+
+<!--                <div class="block_item">-->
+
+<!--                    <h6>SKU: 13243535</h6>-->
+<!--                    <h6>Name: 13243535</h6>-->
+<!--                    <h6>Manufacturer: 13243535</h6>-->
+<!--                    <h6>In stock: ✅</h6>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section3">
+        <div class="container">
+            <div class="wrapper" id="mt-minus">
+
+                <div class="block_item" >
+                    <h3>Call us today to see how we can help you</h3>
+
+                        <form  method="POST" id="feedback" class="block_grid">
+
+                            <input type="text" class="grid_item _req" placeholder="Name" name="name" form="feedback">
+                            <input type="text" class="grid_item _req" placeholder="Phone" name="phone" form="feedback">
+                            <input type="text" class="grid_item _req _email" placeholder="Email" name="email" form="feedback">
+                            <input type="submit" class="grid_item" id="btn-submit" value='SUBMIT' form="feedback">
+                        </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+{%endblock%}
+
+
+

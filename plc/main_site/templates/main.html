@@ -1,0 +1,98 @@
+{% extends "base.html"%}
+{% load static %}
+{%block content%}
+
+    <section class="section1">
+        <div class="container">
+            <div class="wrapper">
+                <div class="block_item">
+                    Your Global Gateway for INDUSTRIAL Automation Parts™
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container">
+            <!-- <div class="wrapper">
+                <div class="block_item">
+                   <img src="img/plc-systems 1.jpg" alt="plc1">
+                   <p>PLC Systems</p>
+                </div>
+                <div class="block_item">
+                    <img src="img/plc-systems 2.jpg" alt="plc2">
+                   <p>HMIs, Screens & Displays</p>
+                </div>
+                <div class="block_item">
+                    <img src="img/plc-systems 3.jpg" alt="plc3">
+                   <p>CNCs, Servo Drives & Motors</p>
+                </div>
+            </div> -->
+            <div class="wrapper" id="slider">
+                <div class="block_item">
+                   <img src="{% static 'img/plc-systems 1.jpg' %}" alt="plc1">
+                   <p>PLC Systems</p>
+                </div>
+                <div class="block_item">
+                    <img src="{% static 'img/plc-systems 2.jpg' %}" alt="plc2">
+                   <p>HMIs, Screens & Displays</p>
+                </div>
+                <div class="block_item">
+                    <img src="{% static 'img/plc-systems 3.jpg' %}" alt="plc3">
+                   <p>CNCs, Servo Drives & Motors</p>
+                </div>
+<!--                <div class="block_item">-->
+<!--                    <img src="img/plc-systems 1.jpg" alt="plc1">-->
+<!--                    <p>PLC Systems</p>-->
+<!--                 </div>-->
+<!--                 <div class="block_item">-->
+<!--                     <img src="img/plc-systems 2.jpg" alt="plc2">-->
+<!--                    <p>HMIs, Screens & Displays</p>-->
+<!--                 </div>-->
+<!--                 <div class="block_item">-->
+<!--                     <img src="img/plc-systems 3.jpg" alt="plc3">-->
+<!--                    <p>CNCs, Servo Drives & Motors</p>-->
+<!--                 </div>-->
+            </div>
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="container">
+            <div class="wrapper">
+                <div class="block_item" id="item-top">
+                   <h3>INDUSTRIAL AUTOMATION PARTS</h3>
+                   <p>Welcome to PLCCNCZONE
+                    </p><br><br>
+                   <p>Your one stop shop for all your industrial automation spares , as a trusted supplier worldwide we have.</p><br><br>
+                   <p>Hundreds of thousands of industrial automation parts from leading manufacturers, including Siemens, Allen Bradley, Mitsubishi, Omron, Telemecanique, Pro-face , IFM ,Indramat and ABB.</p><br><br>
+                   <p>Wether it is current or obsolete.</p><br><br>
+                   <p>Call us today to see how we can help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section3">
+        <div class="container">
+            <div class="wrapper">
+                <div class="block_item" id="item-bottom">
+                   <h3>REPAIRS</h3>
+                   <p>PLCCNCZONE provide repairs on a large range of parts from...</p> <br><br>
+                    <ul>
+                        <li>Siemens</li>
+                        <li>Allen Bradley</li>
+                        <li>Bosch / Indramat</li>
+                        <li>Fanuc</li>
+                    </ul>
+                    <br><br>
+                   <p>To find out more please email us or call us today to see how we can help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+{%endblock%}
